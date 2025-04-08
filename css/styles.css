@@ -39,7 +39,7 @@ i{
 }
 
 section{
-    padding: 30px 20px;
+    padding: 20px;
     margin-bottom: 10%;
 }
 
@@ -163,7 +163,7 @@ section{
 .home-banner{
     justify-content: space-between;
     display: flex;
-    margin: 1em auto;
+    margin: 0 auto;
     width: 95%;
     border-radius: 10px;
     padding: 3em;
@@ -263,7 +263,7 @@ section h3 i{
 
 
 .dis-project-card {
-    width: 460px;
+    width: 450px;
     background-color: #fff;
     border: 1px solid #ccc;
     border-radius: 12px;
@@ -334,6 +334,61 @@ p.project-title {
 
 
 /* proyectos de programacion */
+
+.project-tags{
+    flex-wrap: wrap;
+    width: 100%;
+    margin: 15px 0;
+    display: flex;
+    gap: 15px;
+}
+
+.project-tags li{
+    list-style: none;
+    border-radius: 50px;
+    font-size: 1em;
+    padding: 5px 20px;
+}
+
+.js-tag{
+    background-color: #fef9c3;
+    color: #854d0e;
+}
+
+.html-tag{
+    background-color: #fee2c3;
+    color: #a75b05;
+}
+
+.css-tag{
+    background-color: #c3fafe;
+    color: #05a79a;
+}
+
+
+.proj-program-card{
+    width: 560px;
+    background-color: #fff;
+    border: 1px solid #ccc;
+    border-radius: 12px;
+    overflow: hidden;
+    display: flex;
+    justify-content: space-between;
+    flex-direction: column;
+    box-shadow: var(--boxShadow)
+}
+
+.proj-program-card .card-img{
+    height: 320px;
+}
+
+.proj-program-card .card-footer{
+
+    height: auto;
+
+}
+
+
 
 /* educacion */
 
