@@ -175,7 +175,9 @@ section{
     justify-content: space-between;
     flex-direction: column;
     display: flex;
-    width: 49%;
+    width: 40%;
+    height: 60%;
+    margin: auto 0;
 }
 
 
@@ -283,7 +285,7 @@ section h3 i{
 
   /* Footer con altura fija */
 .card-footer {
-    height: 170px;
+    height: auto;
     padding: 20px 20px;
     background-color: #f5f5f5;
     display: flex;
@@ -365,6 +367,20 @@ p.project-title {
     color: #05a79a;
 }
 
+.psd-tag{
+    background-color: #b5e0fd;
+    color: #0559a7;
+}
+
+.figma-tag{
+    background-color: #fee4c3;
+    color: #852a0e;
+}
+
+.ai-tag{
+    background-color: #fef9c3;
+    color: #854d0e;
+}
 
 .proj-program-card{
     width: 560px;
