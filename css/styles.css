@@ -47,6 +47,10 @@ section{
     padding: 20px;
     margin-bottom: 10%;
 }
+i{
+    margin-right: 5px;
+    color: var(--button-text);
+}
 
 .sidebar {
     border-radius: 0 10px 10px 0;
@@ -214,7 +218,7 @@ section{
     margin-top: 1em;
     justify-content: space-between;
     display: flex;
-    width: 350px;
+    width: 370px;
 }
 
 .links_Projects_Img{
