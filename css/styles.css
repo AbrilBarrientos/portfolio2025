@@ -57,12 +57,12 @@ i{
     justify-content: space-around;
     flex-direction: column;
     display: flex;
-    max-width: 250px;
+    max-width: 230px;
     background-color: var(--main);
     height: 100vh;
     position: sticky;
     top: 0;
-    padding: 0 40px;
+    padding: 0 30px;
     box-shadow: var(--boxShadow);
 }
 
@@ -218,10 +218,10 @@ i{
     margin-top: 1em;
     justify-content: space-between;
     display: flex;
-    width: 370px;
+    width: 400px;
 }
 
-.links_Projects_Img{
+.links_projects_Img{
     gap: 100px;
     justify-content: space-around;
     display: flex;
