@@ -45,7 +45,7 @@ i{
 
 section{
     padding: 20px;
-    margin-bottom: 10%;
+    margin-bottom: 5%;
 }
 i{
     margin-right: 5px;
@@ -119,12 +119,12 @@ i{
     width: 100%;
     text-align: start;
     text-decoration: none;
-    color: var(--title);
+    color: var(--descript);
     font-size: 1.1em;
 }
 
 .sidebar i{
-    color: var(--icon);
+    color: var(--descript);
     margin-right: 20px;
 }
 
@@ -256,7 +256,7 @@ i{
 
 section h3{
     margin-bottom: 1em;
-    color: var(--descript);
+    color: var(--title);
     border-radius: 50px;
     padding: 13px 17px;
     width: fit-content;
@@ -266,7 +266,7 @@ section h3{
 
 
 section h3 i{
-    color: var(--descript);
+    color: var(--title);
     font-size: 1em;
     margin-right: .7em;
 }
@@ -441,6 +441,7 @@ p.project-title {
 }
 
 .icon i{
+    margin: 0;
     color: #2554B7;
 }
 
@@ -508,5 +509,53 @@ p.lvl{
 
 
 /* habilidades */
+
+.skill-card{
+    gap: 35px;
+    justify-content: flex-start;
+    display: flex;
+    padding: 20px;
+    width: 450px;
+    background-color: #fff;
+    height: fit-content;
+    height: 170px;
+    border-radius: 10px;
+    box-shadow: var(--boxShadow);
+}
+
+.skill-title{
+    font-size: 1.4em;
+    font-weight: bold;
+}
+
+p.yrs{
+    margin-top: .3em;
+    font-size: 1.1em;
+    color: var(--instColor);
+}
+
+p.desc{
+    margin-top: .4em;
+    color: var(--descript);
+}
+
+.skill-card .icon{
+    min-width: 55px;
+    height: 55px;
+    border-radius: 7px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: #DBEAFE;
+}
+
+.skill-card .icon i{
+    margin: 0;
+    font-size: 2em;
+}
+
+#skills .section-content{
+    justify-content: flex-start;
+}
 
 /* sobre mi */
