@@ -44,7 +44,7 @@ i{
 }
 
 section{
-    padding: 20px;
+    /* padding: 20px; */
     margin-bottom: 5%;
 }
 i{
@@ -167,6 +167,7 @@ i{
 /* inicio */
 #home h2{
     color: var(--title);
+    margin-bottom: .5em;
 }
 
 .home-banner{
@@ -184,9 +185,10 @@ i{
     justify-content: space-between;
     flex-direction: column;
     display: flex;
-    width: 40%;
-    height: 60%;
+    max-width: 40%;
+    height: 100%;
     margin: auto 0;
+    flex-wrap: wrap;
 }
 
 
@@ -215,6 +217,7 @@ i{
 }
 
 .banner-btn{
+    flex-wrap: wrap;
     margin-top: 1em;
     justify-content: space-between;
     display: flex;
@@ -392,7 +395,7 @@ p.project-title {
 }
 
 .proj-program-card{
-    width: 560px;
+    width: 500px;
     background-color: #fff;
     border: 1px solid #ccc;
     border-radius: 12px;
@@ -559,3 +562,86 @@ p.desc{
 }
 
 /* sobre mi */
+
+#abtme .section-content{
+    justify-content: space-between;
+}
+
+#abtme h4{
+    font-size: 1.5em;
+    margin-bottom: 15px;
+}
+
+.abt-me-p{
+    width: 40%;
+}
+
+.abt-me-p p{
+    color: var(--paragraph);
+    line-height: 25px;
+    margin-bottom: 10px;
+    font-size: 1.2em;
+}
+
+.abt-me-cards{
+
+    width: 50%;
+}
+
+.abt-me-cards .icon{
+    min-width: 55px;
+    height: 55px;
+    border-radius: 7px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: #DBEAFE;
+}
+
+.abt-me-cards .icon i{
+    font-size: 1.7em;
+    margin: 0;
+}
+
+.exp-card{
+    margin-bottom: 20px;
+    gap: 35px;
+    justify-content: flex-start;
+    display: flex;
+    padding: 20px;
+    width: 100%;
+    background-color: #fff;
+    height: fit-content;
+    border-radius: 10px;
+    box-shadow: var(--boxShadow);
+}
+
+.exp-title{
+    margin-bottom: 7px;
+    font-size: 1.2em;
+    font-weight: bold;
+}
+
+p.exp{
+    color: var(--descript);
+}
+
+.wpp{
+    margin-top: 2em;
+    display: flex;
+    max-width: 250px;
+    background-color: #28c25b;
+    justify-content: space-around;
+    border-radius: 50px;
+    align-items: center;
+    padding: 10px 20px;
+}
+
+.wpp p{
+    color: var(--background);
+    margin: 0;
+}
+
+.wpp i{
+    font-size: 1.5em;
+}
