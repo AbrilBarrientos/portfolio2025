@@ -1,10 +1,10 @@
 const proyectosProgramacion = [
     {
         titulo: "Federación Metropolitana de Voleibol",
-        descripcion: "Página de noticias, torneo y reglamentos para la liga metropolitana de voleibol. Se pensaba complementar con PHP, pero por desacuerdos no se terminó el desarrollo",
+        descripcion: "Página de noticias, torneo y reglamentos para la liga metropolitana de voleibol",
         img: "/img/program/fmv.png",
         link: "https://abrilbarrientos.github.io/fmV/",
-        tags: ["JS", "HTML", "CSS"]
+        tags: ["HTML", "CSS"]
     },
     {
         titulo: "Buscador de series y detalles",
