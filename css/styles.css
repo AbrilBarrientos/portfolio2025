@@ -67,8 +67,8 @@ i{
 }
 
 #foto-perfil {
-    width: 100px;
-    height: 100px;
+    width: 130px;
+    height: 130px;
     border-radius: 50%;
     display: block;
     margin: 0 auto 20px auto;
@@ -174,7 +174,6 @@ i{
     justify-content: space-between;
     display: flex;
     margin: 0 auto;
-    width: 95%;
     border-radius: 10px;
     padding: 3em;
     background-color: var(--main);
@@ -185,7 +184,6 @@ i{
     justify-content: space-between;
     flex-direction: column;
     display: flex;
-    max-width: 40%;
     height: 100%;
     margin: auto 0;
     flex-wrap: wrap;
@@ -206,7 +204,7 @@ i{
     align-items: flex-end;
     border-radius: 15px;
     text-align: center;
-    width: 50%;
+    max-width: 400px;
     border: solid var(--button) 5px;
 }
 
@@ -277,7 +275,8 @@ section h3 i{
 
 
 .dis-project-card {
-    width: 500px;
+    width: 100%;        /* que tome todo el ancho posible del contenedor padre */
+    max-width: 500px;   /* pero que no supere los 500px */
     background-color: #fff;
     border: 1px solid #ccc;
     border-radius: 12px;
@@ -287,6 +286,7 @@ section h3 i{
     box-shadow: var(--boxShadow);
     height: fit-content;
 }
+
 
   /* Imagen de la card */
 .card-img{
@@ -403,6 +403,11 @@ p.project-title {
 .krita-tag{
     background-color: #facdf8;
     color: #850e75;
+}
+
+.csp-tag{
+    background-color: #e4dde4;
+    color: #5e4c5b;
 }
 
 .proj-program-card{
@@ -655,4 +660,10 @@ p.exp{
 
 .wpp i{
     font-size: 1.5em;
+}
+
+@media (max-width: 1120px) {
+    .banner-img {
+        display: none;
+    }
 }

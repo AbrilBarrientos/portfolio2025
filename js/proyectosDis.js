@@ -46,7 +46,7 @@ const proyectosDiseno = [
         descripcion: "Diseno de landing page de turismo para Singapur.",
         img: "/img/dis/singapur-web.jpg",
         link: "/img/dis/singapur-web.jpg",
-        tags: ["Krita"]
+        tags: ["PSD"]
     },
     {
         titulo: "'Sin acústica'",
@@ -74,7 +74,7 @@ const proyectosDiseno = [
         descripcion: "Comisión de ilustración digital para usuario en estilo anime del personaje 'Jaique' de la serie 'Tres Acordes'.",
         img: "/img/dis/jaique.jpg",
         link: "/img/dis/jaique.jpg",
-        tags: ["Krita"]
+        tags: ["CSP"]
     },
     {
         titulo: "Baksu-radio",

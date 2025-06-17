@@ -1,5 +1,12 @@
 const proyectosProgramacion = [
     {
+        titulo: "FAKE Casino",
+        descripcion: "Mini juego de tragamonedas online hecho con JavaScript puro. Incluye lógica de apuesta, animación de rodillos, sistema de ganancias y estadísticas persistentes con LocalStorage.",
+        img: "/img/program/fake-casino.png",
+        link: "https://fake-casino.netlify.app",
+        tags: ["HTML", "CSS", "JS"]
+    },
+    {
         titulo: "Federación Metropolitana de Voleibol",
         descripcion: "Página de noticias, torneo y reglamentos para la liga metropolitana de voleibol",
         img: "/img/program/fmv.png",
@@ -10,7 +17,7 @@ const proyectosProgramacion = [
         titulo: "Buscador de series y detalles",
         descripcion: "Proyecto universitario ft. Alvarez-Giacomini para buscar titulos y detalles de series de tv. Desarrollado con API 'TVMAZE'",
         img: "/img/program/buscador-shows.png",
-        link: "https://p1-awp-alvarez-barrientos-giacomini.netlify.app",
+        link: "https://rococo-profiterole-2b75cf.netlify.app",
         tags: ["JS", "HTML", "CSS"]
     },
     {
@@ -54,6 +61,13 @@ const proyectosProgramacion = [
         img: "/img/program/login-signup.png",
         link: "https://log-in-test-sigma.vercel.app",
         tags: ["JS", "HTML", "CSS"]
+    },
+    {
+        titulo: "'Ahorralo' Prototipo app mobile - UX/UI",
+        descripcion: "Diseño y análisis de la experiencia de usuario para una aplicación que escanea códigos de barras de productos de supermercado, identifica la opción más económica y permite solicitar el envío a domicilio de los productos encontrados.",
+        img: "/video/proto-ahorralo.mp4",
+        link: "https://www.figma.com/proto/rgSXWIhqYPCUOhtg0KM8lu/Experiencia_de_usuario-Parcial2-urcullo-alvarez-barrientos-giacomini-dwm2ap?page-id=0%3A1&node-id=292-2235&starting-point-node-id=376%3A2887&t=4ymjfGwXHHzS2q2j-1",
+        tags: ["Figma"]
     }
 ];
 
@@ -62,10 +76,17 @@ const programContainer = document.querySelector("#project-program .section-conte
 proyectosProgramacion.forEach(proy => {
     const tagsHtml = `<ul class="project-tags">${proy.tags.map(tag => `<li class="${tag.toLowerCase()}-tag">${tag}</li>`).join("")}</ul>`;
 
+    // Verifica si es un video por la extensión
+    const isVideo = proy.img.endsWith(".mp4");
+
+    const mediaElement = isVideo
+        ? `<video src="${proy.img}" autoplay muted loop playsinline class="project-video"></video>`
+        : `<img src="${proy.img}" alt="Project image">`;
+
     programContainer.innerHTML += `
         <div class="proj-program-card">
             <div class="card-img">
-                <img src="${proy.img}" alt="Placeholder">
+                ${mediaElement}
             </div>
             <div class="card-footer">
                 <div class="card-info">
@@ -80,3 +101,4 @@ proyectosProgramacion.forEach(proy => {
         </div>
     `;
 });
+
